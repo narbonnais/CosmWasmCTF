@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "InstantiateMsg",
+  "type": "object",
+  "required": [
+    "cw20_code_id"
+  ],
+  "properties": {
+    "cw20_code_id": {
+      "description": "The id of the cw721 bytecode that will be instantiated for each new vault",
+      "type": "integer",
+      "format": "uint64",
+      "minimum": 0.0
+    }
+  }
+}

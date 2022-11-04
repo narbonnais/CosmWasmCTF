@@ -1,0 +1,2 @@
+28ff260503e1539f3f54f21f1365ac91ca9a5297a98ecabf40a9f27ced735cab  target/wasm32-unknown-unknown/release/cw20.wasm
+8634218390e7234ea86ebddf9d7a2ca17108718f31a6f9b216c9dff9eb249b64  target/wasm32-unknown-unknown/release/native_vault.wasm

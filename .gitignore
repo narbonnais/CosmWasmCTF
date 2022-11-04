@@ -1,0 +1,5 @@
+/target
+/testnet
+*.wasm
+node_modules
+tests/receipts.json

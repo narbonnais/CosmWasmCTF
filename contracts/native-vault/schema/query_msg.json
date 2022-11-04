@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "QueryMsg",
+  "oneOf": [
+    {
+      "description": "Returns the native bonded balance of the given owner for the given denom",
+      "type": "object",
+      "required": [
+        "balance"
+      ],
+      "properties": {
+        "balance": {
+          "type": "object",
+          "required": [
+            "denom",
+            "owner"
+          ],
+          "properties": {
+            "denom": {
+              "type": "string"
+            },
+            "owner": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    {
+      "description": "Returns the corresponding cw20 vault address for the given denom",
+      "type": "object",
+      "required": [
+        "config"
+      ],
+      "properties": {
+        "config": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": false
+    },
+    {
+      "description": "Returns the config of the contract",
+      "type": "object",
+      "required": [
+        "vault_address"
+      ],
+      "properties": {
+        "vault_address": {
+          "type": "object",
+          "required": [
+            "denom"
+          ],
+          "properties": {
+            "denom": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    {
+      "description": "Returns all supported denoms",
+      "type": "object",
+      "required": [
+        "denom_list"
+      ],
+      "properties": {
+        "denom_list": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": false
+    }
+  ]
+}
