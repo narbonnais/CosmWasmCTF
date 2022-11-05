@@ -10,9 +10,9 @@ This is a CTF (Capture the Flag) challenge for the [CosmWasm](https://cosmwasm.c
 
 The following software is required to complete this challenge:
 
-  * [Go 1.18+](https://golang.org/dl/)
-  * [Wasmd 0.14.0](https://github.com/CosmWasm/wasmd/tree/v0.14.0)
-  * [Rust 1.55+](https://www.rust-lang.org/tools/install)
+* [Go 1.18+](https://golang.org/dl/)
+* [Wasmd 0.14.0](https://github.com/CosmWasm/wasmd/tree/v0.14.0)
+* [Rust 1.55+](https://www.rust-lang.org/tools/install)
 
 ## Build the contracts
 
@@ -38,7 +38,7 @@ The first step is to run a local network. This is possible with the `wasmd` bina
 ```bash
 git clone https://github.com/CosmWasm/wasmd.git
 cd wasmd
-git checkout v0.14.0
+git checkout v0.14.0 # if you are on arm, that version is not supported yet -- use the origin/main branch
 make install
 ```
 
@@ -61,6 +61,8 @@ cd tests
 npm install
 npm run deploy
 ```
+
+> If you are using the ./scripts/optimize-arm.sh script, you need to modify the names of the WASM files on the javascript files, as the WASM files do not have the same name and now have a `-aarch64` suffix.
 
 That will deploy the contracts, run some tests, and save the code ID and addresses of the contracts in the `tests/receipt.json` file.
 
