@@ -26,7 +26,7 @@ cargo wasm
 If everything is building correctly, you can then build the optimized WASM binaries with:
 
 ```bash
-./scripts/optimize.sh # or ./scripts/optimize_arm.sh if you are on an ARM machine
+./scripts/optimize.sh # or `./scripts/optimize-arm.sh` if you are on an ARM machine
 ```
 
 That will output the optimized WASM binaries in the `artifacts` directory.
@@ -62,7 +62,7 @@ npm install
 npm run deploy
 ```
 
-> If you are using the ./scripts/optimize-arm.sh script, you need to modify the names of the WASM files on the javascript files, as the WASM files do not have the same name and now have a `-aarch64` suffix.
+> If you are using the `./scripts/optimize-arm.sh` script, you need to modify the names of the WASM files on the javascript files, as the WASM files do not have the same name and now have a `-aarch64` suffix.
 
 That will deploy the contracts, run some tests, and save the code ID and addresses of the contracts in the `tests/receipt.json` file.
 
