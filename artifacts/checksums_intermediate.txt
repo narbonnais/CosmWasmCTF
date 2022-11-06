@@ -1,2 +1,3 @@
-28ff260503e1539f3f54f21f1365ac91ca9a5297a98ecabf40a9f27ced735cab  target/wasm32-unknown-unknown/release/cw20.wasm
-8634218390e7234ea86ebddf9d7a2ca17108718f31a6f9b216c9dff9eb249b64  target/wasm32-unknown-unknown/release/native_vault.wasm
+482c35f28b5ac5955fe9076d97baf904253418e09beb38f3c1d5de856ceaa0b5  target/wasm32-unknown-unknown/release/cw20.wasm
+fa9aff0a7adad30fbe8e27fb3912a3e57fdbb79dcb7ee3eb0867192703a1cb7e  target/wasm32-unknown-unknown/release/cw721.wasm
+69b7fa6374a89d579cd6756c65de32af6d7441ac4d8be0813ec29402cf80a9c4  target/wasm32-unknown-unknown/release/native_vault.wasm
