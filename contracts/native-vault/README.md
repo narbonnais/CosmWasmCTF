@@ -1,6 +1,6 @@
 # Native Vault
 
-This contract is a simple wrapper around native tokens to make them compatible with CW20. It is a simple contract that implements the CW20 spec, and can be used as a drop-in replacement for native tokens in any contract that expects a CW20 token.
+This contract is a simple wrapper around native tokens to make them compatible with CW20. It is a simple contract that is meant to be a bridge between CW20 and native tokens: by bonding native tokens, you can mint CW20 tokens, and by unbonding CW20 tokens, you can burn them and get back native tokens.
 
 ## Messages
 
